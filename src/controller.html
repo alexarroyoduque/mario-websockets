@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>mario-websockets</title>
+
+  <!-- build:css src/main.min.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- /build -->
+</head>
+
+<body>
+
+  <div id="mario-websockets-game" class="game"></div>
+
+  <!-- build:remove -->
+  <script src="http://localhost:35729/livereload.js"></script>
+  <!-- /build -->
+
+  <!-- build:js src/phaser-arcade-physics.min.js-->
+  <script src="bower_components/phaser-official/build/custom/phaser-arcade-physics.min.js"></script>
+  <!-- /build -->
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- build:js src/controller-scripts.min.js -->
+  <script src="js/controller/controller.js"></script>
+  <script src="js/controller/boot.js"></script>
+  <script src="js/controller/preloader.js"></script>
+  <script src="js/controller/main.js"></script>
+  <!-- yo phaser:state new-state-files-put-here -->
+  <!-- /build -->
+
+</body>
+</html>
+
